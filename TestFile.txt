@@ -1,0 +1,73 @@
+if (TransType == "inventory" || TransType == "INVENTORY") {
+
+        cout << "input model quantity: ";
+        cin >> quantity;
+
+
+        Inv Storage;
+
+        for ( i = 0; i < quantity; i++) {
+            cout << "Enter details:   ";
+            cin >> type[i] >> model[i] >> stock[i] >> price[i];
+            //cout << "Enter model name: ";
+            //cin >> model[i];
+            //cout << "Enter stock:      ";
+            //cin >> stock[i];
+            //cout << "Enter price:      ";
+            //cin >> price[i];
+            Storage.t[i] = type[i];
+            Storage.m[i] = model[i];
+            Storage.s[i] = stock[i];
+            Storage.p[i] = price[i];
+        }
+        Storage.setInfo(quantity);
+        loading('a');
+        Header_Display(quantity);
+        for ( i = 0; i < quantity; i++) {
+            cout << "Item Type and Model: " << Storage.t[i] << "_" << Storage.m[i] << endl;
+            cout << "No. of Stocks: " << Storage.s[i] << endl;
+            cout << "Declared price: " << Storage.p[i] << endl;
+        }
+    }
+
+    
+    string GetdataType(int quantity) {
+        int i = quantity;
+        return Type[i];
+    }
+
+    string GetdataModel(int quantity) {
+        int i = quantity;
+        return Model[i];
+    }
+
+    double GetdataPrice(int quantity) {
+        int i = quantity;
+        return Price[i];
+    }
+
+    double GetdataStock(int quantity) {
+        int i = quantity;
+        return Stock[i];
+    }
+
+
+     void setInfoPrice(double price, int quantitynumber) {
+        int i = quantitynumber;
+        Price[i] = price;
+    }
+
+    void setInfoStock(double stock, int quantitynumber) {
+        int i = quantitynumber;
+        Stock[i] = stock;
+    }
+
+    void setInfoType(string type, int quantitynumber) {
+        int i = quantitynumber;
+        Type[i] = type;
+    }
+
+    void setInfoModel(string model, int quantitynumber) {
+        int i = quantitynumber;
+        Model[i] = model;
+    }

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\JAHNREIL\source\repos\PeriodicalCarProgram\PeriodicalCarProgram\</FILEPATH>
+      <FILENAME>PeriodicalCarProgram.cpp</FILENAME>
+      <LINE>45</LINE>
+      <COLUMN>0</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Inv::p' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Inv::{ctor}</FUNCTION>
+    <DECORATED>??0Inv@@QAE@XZ</DECORATED>
+    <FUNCLINE>45</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>Inv::p</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>
