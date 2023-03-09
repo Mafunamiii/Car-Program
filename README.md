@@ -1,2 +1,2 @@
-" Car program for 2nd periodical exam, 12th grade" 
+" Miles per gallon program with the use of pointers and addresses" 
 "# Car-Program" 
